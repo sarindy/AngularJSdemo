@@ -20,9 +20,9 @@ public class APIController {
 
 	@RequestMapping(value = "/getallcustomer", method = RequestMethod.GET)
 	public List<Customer> getCustomer() {
-		List<Customer> cust = new ArrayList<>();
-		customerService.getAllCustomer().forEach(cust::add);
-		return cust;
+		List<Customer> custstomer = new ArrayList<>();
+		customerService.getAllCustomer().forEach(custstomer::add);
+		return custstomer;
 	}
 
 	@RequestMapping(value = "/postcustomer", method = RequestMethod.POST)

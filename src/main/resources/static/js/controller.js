@@ -1,7 +1,7 @@
 var app = angular.module('app', []);
 
 app.controller('postcontroller', function($scope, $http, $location) {
-	$scope.submitForm = function() {
+	$scope.submitForms = function() {
 		var url = $location.absUrl() + "postcustomer";
 
 		var config = {
@@ -10,8 +10,10 @@ app.controller('postcontroller', function($scope, $http, $location) {
 			}
 		}
 		var data = {
-			firstName : $scope.firstname,
-			lastName : $scope.lastname
+				/* firstName is the one in Java Class and firstnames is the one in html index file*/
+		}
+			firstName : $scope.firstnames,
+			lastName : $scope.lastnames
 		};
 
 		$http.post(url, data, config).then(function(response) {
@@ -35,9 +37,9 @@ app.controller('getcontroller', function($scope, $http, $location) {
 			}
 		}
 
-		$http.get(url, config).then(function(response) {
-			$scope.response = response.data
-		}, function(response) {
+		$http.get(url, config).then(function(myResponse) {
+			$scope.myResponse = myResponse.data
+		}, function(myResponse) {
 			$scope.getResultMessage = "Fail!";
 		});
 	}
