@@ -19,31 +19,23 @@
 	</div>
 	<br />
 
-	<div class="container" ng-app="app" >
-
-
+	<div class="container" ng-app="app">
 		<div class="row">
-
-			<div  class="col-lg-3" ng-controller="getcustomer">		
-			
-			<form ng-submit="getName()">
+			<div class="col-lg-3" ng-controller="getcustomer">
+				<form ng-submit="getName()">
 					<label>First Name</label> <input type="text" class="form-control" ng-model="firstname" />
 					<button type="submit" class="btn btn-primary">Search First Name</button>
-				</form>		
-					
-					 		
+				</form>
 				<ul>
 					<li ng-repeat="name in response">{{name.firstName}}</li>
 				</ul>
-				
-			
-			</div>
 		</div>
+	</div>
 	</div>
 
 
 
-	
+
 
 
 
