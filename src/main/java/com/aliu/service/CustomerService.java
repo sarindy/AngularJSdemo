@@ -9,5 +9,8 @@ public interface CustomerService {
 	public Customer addCustomer(Customer customer);
 	
 	public List<Customer> getAllCustomer();
-
+	
+	public List<Customer> getCustomerFirstNameStartWith(Customer customer);
+	
+	public List<Customer> getCustomerlastNameStartWith(Customer customer);
 }

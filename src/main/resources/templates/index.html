@@ -20,19 +20,23 @@
 	<br />
 
 	<div class="container" ng-app="app">
+
+
 		<div class="row">
 
 			<div ng-controller="postcontroller" class="col-lg-3">
 				<form ng-submit="submitForms()">
-					<label>First Name</label> <input type="text"  class="form-control" ng-model="firstnames" />
-					<label>Last Name</label>
-					<input type="text" class="form-control" ng-model="lastnames"/>
+					<label>First Name</label> <input type="text" class="form-control" ng-model="firstnames" /> <label>Last Name</label> <input type="text"
+						class="form-control" ng-model="lastnames"
+					/>
 					<button type="submit" class="btn btn-primary">Create</button>
 				</form>
 				<p>{{postResultMessage}}</p>
 		</div>
-			</div>
+	</div>
 
+
+		<div class="row">
 			<div ng-controller="getcontroller">
 				<button id="btn-id" ng-click="getfunction()">Get All Customers</button>
 
@@ -41,10 +45,21 @@
 				</ul>
 
 		</div>
+	</div>
+		<div class="row">
+			<div ng-controller="getcustomername" class="col-lg-3">
+			<label>First Name</label> <input ng-keypress="getFirstNameStartWith()" type="text" class="form-control" ng-model="firstname" />
 
-
+				<ul>
+					<li ng-repeat="name in response">{{name.firstName}}</li>
+				</ul></div>
 
 	</div>
+
+	</div>
+
+
+
 
 	<!-- jQuery -->
 	<script src="/jquery/jquery.min.js"></script>

@@ -1,5 +1,7 @@
 var app = angular.module('app', []);
 
+
+
 app.controller('postcontroller', function($scope, $http, $location) {
 	$scope.submitForms = function() {
 		var url = $location.absUrl() + "postcustomer";
@@ -11,7 +13,7 @@ app.controller('postcontroller', function($scope, $http, $location) {
 		}
 		var data = {
 				/* firstName is the one in Java Class and firstnames is the one in html index file*/
-		}
+		
 			firstName : $scope.firstnames,
 			lastName : $scope.lastnames
 		};
@@ -44,3 +46,38 @@ app.controller('getcontroller', function($scope, $http, $location) {
 		});
 	}
 });
+
+
+
+
+//The controller
+
+
+app.controller('getcustomer', function($scope, $http, $location) {
+	$scope.getName = function() {
+		var url = $location.absUrl() + "getCustomerFirstNameStartWith";
+
+		var config = {
+			headers : {
+				'Content-Type' : 'application/json;charset=utf-8;'
+			}
+		}
+		var data = {
+				// firstName is the one in Java Class and firstnames is the one in html index file
+		
+			firstName : $scope.firstname
+			
+		};
+
+		$http.post(url, data, config).then(function(response) {
+			$scope.response = response.data;
+		}, function(response) {
+			$scope.postResultMessage = "Fail!";
+		});
+
+		
+		
+	}
+});
+
+

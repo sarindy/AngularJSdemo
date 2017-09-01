@@ -27,4 +27,19 @@ public class CustomerServiceImplement implements CustomerService {
 		return customerList;
 	}
 
+	@Override
+	public List<Customer> getCustomerFirstNameStartWith(Customer customer) {
+		List<Customer> customerList = new ArrayList<>();
+		customerRepo.findByfirstNameStartingWith(customer.getFirstName()).forEach(customerList::add);
+		System.out.println("Service " + customer.getFirstName().toString());
+		return customerList;
+	}
+
+	@Override
+	public List<Customer> getCustomerlastNameStartWith(Customer customer) {
+		List<Customer> customerList = new ArrayList<>();
+		customerRepo.findBylastNameStartingWith(customer.getLastName()).forEach(customerList::add);
+		return customerList;
+	}
+
 }

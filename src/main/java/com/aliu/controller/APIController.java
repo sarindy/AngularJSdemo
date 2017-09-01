@@ -30,5 +30,13 @@ public class APIController {
 		customerService.addCustomer(customer);
 		return;
 	}
+	
+	@RequestMapping(value = "/getCustomerFirstNameStartWith", method = RequestMethod.POST)
+	public List<Customer> getCustomerFirstNameStartWith(@RequestBody Customer customer) {
+		System.out.println("API Controller " + customer.getFirstName().toString());
+		List<Customer> custstomers = new ArrayList<>();
+		customerService.getCustomerFirstNameStartWith(customer).forEach(custstomers::add);
+		return custstomers;
+	}
 
 }

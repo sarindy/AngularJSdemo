@@ -18,15 +18,25 @@ public class Customer {
 	private String firstName;
 	@Column(name="last_name")
 	private String lastName;
+	@Column(name="sex")
+	private String sex;
+	
 	public Customer() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Customer(int id, String firstName, String lastName) {
+	public String getSex() {
+		return sex;
+	}
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+	public Customer(int id, String firstName, String lastName, String sex) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.sex=sex;
 	}
 	public int getId() {
 		return id;
