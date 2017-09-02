@@ -64,7 +64,6 @@ app.controller('getcustomer', function($scope, $http, $location) {
 			// html index file
 
 			firstName : $scope.firstname
-
 		};
 
 		$http.post(url, data, config).then(function(response) {

@@ -5331,3 +5331,97 @@ java.lang.NullPointerException: null
 2017-09-01 15:32:25 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fcacb1f: startup date [Fri Sep 01 15:28:33 ICT 2017]; root of context hierarchy
 2017-09-01 15:32:25 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
 2017-09-01 15:32:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:20:05 INFO  c.a.AngularJSdemoApplication:48 - Starting AngularJSdemoApplication on dy-e7470 with PID 916 (C:\Users\dy\Documents\GitHub\AngularJSdemo\target\classes started by dy in C:\Users\dy\Documents\GitHub\AngularJSdemo)
+2017-09-02 11:20:05 INFO  c.a.AngularJSdemoApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-02 11:20:06 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:20:06 ICT 2017]; root of context hierarchy
+2017-09-02 11:20:07 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-02 11:20:07 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-02 11:20:07 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-02 11:20:07 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-02 11:20:07 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1443 ms
+2017-09-02 11:20:07 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-02 11:20:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-02 11:20:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-02 11:20:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-02 11:20:07 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-02 11:20:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:20:08 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-02 11:20:08 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-02 11:20:08 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-02 11:20:08 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-02 11:20:08 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-02 11:20:08 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-02 11:20:08 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-02 11:20:08 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: customer
+2017-09-02 11:20:08 INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: customer
+2017-09-02 11:20:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:20:06 ICT 2017]; root of context hierarchy
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getCustomerFirstNameStartWith],methods=[POST]}" onto public java.util.List<com.aliu.model.Customer> com.aliu.controller.APIController.getCustomerFirstNameStartWith(com.aliu.model.Customer)
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getallcustomer],methods=[GET]}" onto public java.util.List<com.aliu.model.Customer> com.aliu.controller.APIController.getCustomer()
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/postcustomer],methods=[POST]}" onto public void com.aliu.controller.APIController.postCustomer(com.aliu.model.Customer)
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.aliu.controller.WebController.homepage()
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-02 11:20:09 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-02 11:20:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:20:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:20:09 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:20:09 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-02 11:20:09 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-02 11:20:09 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-02 11:20:09 INFO  c.a.AngularJSdemoApplication:57 - Started AngularJSdemoApplication in 4.184 seconds (JVM running for 4.817)
+2017-09-02 11:20:24 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-02 11:20:24 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-02 11:20:24 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2017-09-02 11:20:30 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-02 11:20:44 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2017-09-02 11:20:44 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:20:06 ICT 2017]; root of context hierarchy
+2017-09-02 11:20:44 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-02 11:20:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:53:46 INFO  c.a.AngularJSdemoApplication:48 - Starting AngularJSdemoApplication on dy-e7470 with PID 7944 (C:\Users\dy\Documents\GitHub\AngularJSdemo\target\classes started by dy in C:\Users\dy\Documents\GitHub\AngularJSdemo)
+2017-09-02 11:53:46 INFO  c.a.AngularJSdemoApplication:593 - No active profile set, falling back to default profiles: default
+2017-09-02 11:53:47 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:53:47 ICT 2017]; root of context hierarchy
+2017-09-02 11:53:48 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2017-09-02 11:53:48 INFO  o.a.c.c.StandardService:179 - Starting service [Tomcat]
+2017-09-02 11:53:48 INFO  o.a.c.c.StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-02 11:53:48 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring embedded WebApplicationContext
+2017-09-02 11:53:48 INFO  o.s.w.c.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1469 ms
+2017-09-02 11:53:48 INFO  o.s.b.w.s.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-02 11:53:48 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-02 11:53:48 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-02 11:53:48 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-02 11:53:48 INFO  o.s.b.w.s.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-02 11:53:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:53:49 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-02 11:53:49 INFO  o.h.Version:37 - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-02 11:53:49 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2017-09-02 11:53:49 INFO  o.h.c.Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-09-02 11:53:49 INFO  o.h.a.c.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-02 11:53:49 INFO  o.h.d.Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-02 11:53:49 INFO  o.h.t.h.SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-09-02 11:53:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:53:47 ICT 2017]; root of context hierarchy
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getallcustomer],methods=[GET]}" onto public java.util.List<com.aliu.model.Customer> com.aliu.controller.APIController.getCustomer()
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/postcustomer],methods=[POST]}" onto public void com.aliu.controller.APIController.postCustomer(com.aliu.model.Customer)
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/getCustomerFirstNameStartWith],methods=[POST]}" onto public java.util.List<com.aliu.model.Customer> com.aliu.controller.APIController.getCustomerFirstNameStartWith(com.aliu.model.Customer)
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.aliu.controller.WebController.homepage()
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-02 11:53:50 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-02 11:53:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:53:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:53:50 INFO  o.s.w.s.h.SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-02 11:53:50 INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2017-09-02 11:53:50 INFO  o.s.j.e.a.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-09-02 11:53:50 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8080 (http)
+2017-09-02 11:53:50 INFO  c.a.AngularJSdemoApplication:57 - Started AngularJSdemoApplication in 4.039 seconds (JVM running for 4.749)
+2017-09-02 11:53:59 INFO  o.a.c.c.C.[.[.[/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-02 11:53:59 INFO  o.s.w.s.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-02 11:53:59 INFO  o.s.w.s.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-02 11:54:14 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-02 11:54:19 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2017-09-02 11:54:19 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@489579fd: startup date [Sat Sep 02 11:53:47 ICT 2017]; root of context hierarchy
+2017-09-02 11:54:19 INFO  o.s.j.e.a.AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-09-02 11:54:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:548 - Closing JPA EntityManagerFactory for persistence unit 'default'
